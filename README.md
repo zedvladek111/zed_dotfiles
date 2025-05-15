@@ -11,9 +11,10 @@
   • waybar <br>
   • picom <br>
   • dunst <br>
+  • nmcli <br>
 </p>
 <h3>Arch Linux:</h3>
-<pre>sudo pacman -S hyprland wayland kitty python3 python-pip rofi nsxiv waybar picom dunst</pre>
+<pre>sudo pacman -S hyprland wayland kitty python3 python-pip rofi nsxiv waybar picom dunst nmcli</pre>
 
 <h3>Install pywal:</h3>
 <pre>pip install pywal</pre>

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Get the WiFi connection status and signal strength
+wifi_status=$(nmcli -t -f ACTIVE,SSID,SIGNAL dev wifi | grep '^yes')
+
+# Check if connected to WiFi
+if [[ -n "$wifi_status" ]]; then
+    # Extract the SSID and signal strength
+    ssid=$(echo "$wifi_status" | cut -d: -f2)
+    signal=$(echo "$wifi_status" | cut -d: -f3)
+
+    # Set WiFi icon based on signal strength
+    if [[ $signal -ge 75 ]]; then
+        icon=" "  # Full signal (high)
+    elif [[ $signal -ge 50 ]]; then
+        icon=" "  # Medium signal
+    elif [[ $signal -ge 25 ]]; then
+        icon=" "  # Low signal
+    else
+        icon=" "  # Very low signal
+    fi
+
+    echo "<span>$icon</span><span>$ssid</span>"
+else
+    # If not connected to WiFi
+    echo "<span>睊 </span><span>No WiFi</span>"
+fi
