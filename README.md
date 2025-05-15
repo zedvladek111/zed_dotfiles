@@ -18,4 +18,4 @@
 <h3>Install pywal:</h3>
 <pre>pip install pywal</pre>
 
-<img src="">
+<img src="preview.png">
