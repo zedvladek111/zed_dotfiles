@@ -1,0 +1,146 @@
+@import url("/home/ztrixi/.cache/wal/custom_colors.css");
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: @color4;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @color1;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: @color4;
+}
+
+#workspaces button.focused {
+    color: @color4;
+    background: @color5;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: @color0;
+    background: @color2;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: @color4;
+    color: @color0; 
+    border-radius: 10px;
+}
+
+#custom-nordvpn,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#custom-power,
+#backlight {
+    background: #000;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+    /* border: 1px solid #181825; */
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #000;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#cpu {
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 0px;
+}
+
+#memory {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: @color4;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    border-right: 0px;
+}
+
+#network {
+    color: @color4;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#pulseaudio {
+    color: @color4;
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: @color4;
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 0px;
+}
+
+#custom-nordvpn {
+    color: @color4;
+    border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
+}
+
+#custom-power {
+    color: @color4;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#battery {
+    color: @color4;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    color: @color4;
+}
+
+#cpu {
+    color: @color4;
+}
