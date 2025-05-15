@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+current_layout=$(hyprctl devices -j |
+  jq -r '.keyboards[] | .active_keymap' |
+  head -n1 |
+  cut -c1-2 |
+  tr 'a-z' 'A-Z')
+
+# Determine the new layout based on the current one
+if [[ "$current_layout" == "EN" ]]; then
+    new_layout="es"
+    message="Switched to Spanish Layout"
+else
+    new_layout="us"
+    message="Switched to US Layout"
+fi
+
+hyprctl keyword input:kb_layout $new_layout
+notify-send "Keyboard Layout Changed" "$message"

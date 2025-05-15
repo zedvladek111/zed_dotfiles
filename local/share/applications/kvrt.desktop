@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Kaspersky Virus Removal Tool
+Comment=Remove viruses.
+Icon=kvrt
+Exec=sudo /home/ztrixi/.local/bin/kvrt.run
+Categories=kvrt;

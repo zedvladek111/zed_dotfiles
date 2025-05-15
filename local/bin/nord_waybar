@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the NordVPN status
+status_output=$(sudo nordvpn status)
+
+# Check if connected or disconnected
+if echo "$status_output" | grep -q "Status: Connected"; then
+    # Extract the country
+    city=$(echo "$status_output" | grep "City" | awk '{print $2}')
+    echo "<span foreground='#ffffff'> </span><span foreground='#8ae27f'>Connected: $city</span>"
+else
+    echo "<span foreground='#ffffff'> </span><span foreground='#f25255'>Off</span>"
+fi
