@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+wallpaper="$(find ~/Pictures/Wallpapers/ -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" | nsxiv -riot | head -n 1)"
+
+wal -s -i $wallpaper
+
+if [ -n "$wallpaper" ]; then
+    sed -i '1,2d' ~/.config/hypr/hyprpaper.conf && echo "preload = $wallpaper\nwallpaper = , $wallpaper" > ~/.config/hypr/hyprpaper.conf && pkill hyprpaper && hyprpaper
+    
+    sed -i '30,161d' ~/.cache/wal/colors-rofi-dark.rasi
+
+    sed -i '28i \
+        bg-col:  @background; \
+        bg-col-light: @alternate-active-background; \
+        border-col: @border-color; \
+        selected-col: @selected-active-background; \
+        blue: @urgent-background; \
+        fg-col: @foreground; \
+        fg-col2: @selected-active-foreground; \
+        grey: #6c7086; \
+    \
+        width: 600; \
+        font: "Ubuntu Nerd Font Regular 14";' $HOME/.cache/wal/colors-rofi-dark.rasi
+fi
+
+xdotool key super+F5 && cat ~/.cache/wal/dunst_colors > ~/.config/dunst/dunstrc && pkill dunst && dunst

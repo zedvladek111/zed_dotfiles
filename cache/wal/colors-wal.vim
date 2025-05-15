@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ztrixi/Pictures/Wallpapers/wallhaven-yq78rx.jpg"
+let background = "#091613"
+let foreground = "#d0dbdd"
+let cursor     = "#d0dbdd"
+
+" Colors
+let color0  = "#091613"
+let color1  = "#536A6A"
+let color2  = "#6A8779"
+let color3  = "#617B84"
+let color4  = "#738C8E"
+let color5  = "#78B7C4"
+let color6  = "#92A6A9"
+let color7  = "#d0dbdd"
+let color8  = "#91999a"
+let color9  = "#536A6A"
+let color10 = "#6A8779"
+let color11 = "#617B84"
+let color12 = "#738C8E"
+let color13 = "#78B7C4"
+let color14 = "#92A6A9"
+let color15 = "#d0dbdd"

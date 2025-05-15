@@ -1,0 +1,40 @@
+* {
+    active-background: #6A8779;
+    active-foreground: @foreground;
+    normal-background: @background;
+    normal-foreground: @foreground;
+    urgent-background: #536A6A;
+    urgent-foreground: @foreground;
+
+    alternate-active-background: @background;
+    alternate-active-foreground: @foreground;
+    alternate-normal-background: @background;
+    alternate-normal-foreground: @foreground;
+    alternate-urgent-background: @background;
+    alternate-urgent-foreground: @foreground;
+
+    selected-active-background: #536A6A;
+    selected-active-foreground: @foreground;
+    selected-normal-background: #6A8779;
+    selected-normal-foreground: @foreground;
+    selected-urgent-background: #617B84;
+    selected-urgent-foreground: @foreground;
+
+    background-color: @background;
+    background: #091613;
+    foreground: #d0dbdd;
+    border-color: @background;
+    spacing: 2;
+        bg-col:  @background; 
+        bg-col-light: @alternate-active-background; 
+        border-col: @border-color; 
+        selected-col: @selected-active-background; 
+        blue: @urgent-background; 
+        fg-col: @foreground; 
+        fg-col2: @selected-active-foreground; 
+        grey: #6c7086; 
+    
+        width: 600; 
+        font: "Ubuntu Nerd Font Regular 14";
+}
+
