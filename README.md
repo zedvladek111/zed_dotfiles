@@ -15,5 +15,5 @@
 <h3>Arch Linux:</h3>
 <pre>sudo pacman -S hyprland wayland kitty python3 rofi sxiv waybar picom dunst</pre>
 
-<h4>Install pip:</h4>
+<h3>Install pip:</h3>
 <pre>pip install pywal</pre>
