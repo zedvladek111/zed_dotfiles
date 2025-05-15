@@ -13,6 +13,7 @@
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
+	"custom/wifi_menu",
 	"custom/nordvpn",
 	"tray",
         "memory",
@@ -117,6 +118,13 @@
         "format": "{}",
 	"tooltip": false,
 	"on-click": "~/.local/bin/Nord_vpn.sh"
+    },
+
+    "custom/wifi_menu": {
+    	"exec": "~/.local/bin/wifi_waybar",
+        "interval": 5,
+        "tooltip": false,
+        "on-click": "~/.local/bin/rofi-scripts/rofi-wifi-menu.sh"	
     },
 
     "custom/power": {
