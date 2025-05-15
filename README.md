@@ -13,7 +13,7 @@
   • dunst <br>
 </p>
 <h3>Arch Linux:</h3>
-<pre>sudo pacman -S hyprland wayland kitty python3 rofi sxiv waybar picom dunst</pre>
+<pre>sudo pacman -S hyprland wayland kitty python3 python-pip rofi sxiv waybar picom dunst</pre>
 
-<h3>Install pip:</h3>
+<h3>Install pywal:</h3>
 <pre>pip install pywal</pre>
